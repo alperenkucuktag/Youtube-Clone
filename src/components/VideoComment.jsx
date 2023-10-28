@@ -15,16 +15,7 @@ const VideoComment = ({id}) => {
     
     
   }, []);
-//   commentİd ye nerden ulaşırız burdan bakabilrsin
-//   console.log(comment);
-  
-  
 
-
-  return (
-    <div>
-        {
-            // MAP İLE APİ ÇEKİYORUZ İKİ PARAMETRE İLE commentId ye bu şekilde ulaştık
         (comment?.map((comment,i)=>(
             <div className="flex gap-2 mt-5 rounded-full">
               

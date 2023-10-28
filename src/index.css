@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  
+  min-height: 100vh;
+  color: white;
+  background-color:rgb(15,15,15);
+  height:20vh;
+  overflow:scroll;
+  overflow-x: hidden;
+  
+  
+}
+
+
+
+
+.videos{
+  width: 100%;
+  display: grid;
+  gap: 50px;
+  /* bu grid özellğini bil */
+  grid-template-columns: repeat(auto-fit,minMax(320px,325px));
+  justify-content: center;
+  height:140vh;
+  overflow:scroll;
+  
+}
+.videos::-webkit-scrollbar{
+  display: none;
+  
+}
+.results{
+  display: flex;
+  flex-direction: column;
+  width:120%;
+  padding:1.25rem;
+  align-items:self-start;
+  height: 120vh;
+  gap: 2rem;
+  overflow: scroll;
+
+
+}
+.contain{
+  height: 250vh; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.25rem;
+  max-width: 1000vh;
+  margin: auto;
+  height: 1000vh;
+  overflow: scroll;
+  justify-content:space-evenly;
+  margin-left: 50px;
+  
+}
+.contain::-webkit-scrollbar{
+  display: none;
+}
+
+
+.results::-webkit-scrollbar{
+  display: none;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  overflow-y: scroll;
+
+
+}
+nav::-webkit-scrollbar-thumb {
+  background-color:gray;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;  
+}
+
+nav::-webkit-scrollbar {
+  width: 16px;
+}
+
+nav {
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  max-height: 600px;
+
+
+  border-radius: 8px;
+}
+
+
+
+
+
+@media (max-width:768px){
+  .videos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    justify-content: unset;
+    overflow:scroll;
+  }
+  .videos::-webkit-scrollbar{
+    display: none;
+  }
+
+
+}
